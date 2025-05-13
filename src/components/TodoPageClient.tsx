@@ -84,7 +84,6 @@ export default function TodoPageClient({ todos: initialTodos, error: initialErro
 
         {/* Todoリスト */}
         {isLoading && <p className="text-center text-gray-500">読み込み中...</p>}
-        {errorMessage && <p className="text-red-500 text-center mb-4">{errorMessage}</p>}
         {!isLoading && todos.length === 0 && !errorMessage && (
           <p className="text-center text-gray-500">Todoがありません</p>
         )}
